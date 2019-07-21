@@ -1,0 +1,326 @@
+/* body */
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(221, 221, 221);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(51,51,51);
+}
+
+.container {
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    /* color: rgb(221, 221, 221); 質問；なぜここにcolorを入れても反映されない？*/
+}
+
+header > .container {
+    display: flex;
+    /* align-items: flex-end; */
+}
+
+.container a {
+    color: rgba(221, 221, 221, 0.8);
+}
+
+.header-left {
+    height: 70px;
+}
+
+.logo {
+    display: inline-block;
+    width: 203px;
+    font-size: 2rem;
+    padding-top: 22px;
+    /* height: 70px; */
+    /* line-height: 35.2px; */
+    /* margin-top: 17.5px; */
+    /* vertical-align: middle; */
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.header-right {
+    height: 70px;
+}
+
+.header-right li {
+    height: 70px;
+    margin: 0
+}
+
+/* .link {
+    color: inherit;
+} */
+
+ul {
+    display: flex;
+    margin: 0
+}
+
+.link {
+    display: inline-block;
+    /* height: 21px; */
+    margin: 24.5px;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+ 
+.link:hover::after {
+    content: '';
+    display: block;
+    margin: 6px auto 0;
+    border-bottom: 3px solid #5cb85c;
+    /* 質問；hoverした時に最後のlog-inだけ除外する方法は？ */
+    /* 質問；hoverした時に下からニュルッと出す方法は？ */
+}
+
+.choice-showy {
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.log-in {
+    padding: 8px 12px;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 8px 12px;
+}
+
+.link:hover {
+    color: rgba(221, 221, 221, 1.0)
+    
+}
+
+/* 海の日キャンペーン */
+#campaign {
+    color: #333333;
+    background: url('/img/bg.jpg');
+    height: 500px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#campaign img {
+    width: 670px;
+    margin-top: 50px;
+}
+
+#campaign p {
+    text-align: center;
+    font-size: 19px;
+}
+
+.reminder {
+    position: relative;
+    width: 250px;
+    height: 47px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    background-color: blue;
+    color: white;
+}
+
+.reminder::after {
+    content: '';
+    position: absolute;
+    top: 39px;
+    left: 117px;
+    width: 16px;
+    height: 16px;
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+.campaigned-course {
+    display: inline-block;
+    color: rgba(51, 51, 51, 1.0) !important;
+    font-size: 15px;
+    width: 214.75px;
+    height: 48px;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: 2px solid rgba(51, 51, 51, 1.0);
+    border-radius: 48px;
+    white-space: nowrap;
+}
+
+
+/* 受賞 */
+.advs {
+    width: 100%;
+    height: 90px;
+    display: flex;    
+}
+
+.award {
+    background-color: blue;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.award img {
+    width: 100px;
+    margin-right: 10px;
+    /* 質問：originalではimgとpの間の間隔をどうやって調整している？ */
+}
+
+.award p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 1px;    
+}
+
+.payment {
+    background-color: orange;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment img {
+    width: 160px;
+    margin-right: 10px;
+}
+
+.payment p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* 無料キャンペーン */
+.free-of-charge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 530px;
+    padding: 70px 0;
+}
+
+.foc-topics {
+    display: flex;
+    width: 40%;
+    height: 180px;
+    border: 1px solid #777777;
+    margin: 0 15px 30px;
+    box-shadow: 0 0 2px #777775;
+    position: relative;
+}
+
+.foc-topics .topic {
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-color: #58BC5C;
+    color: white;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: center;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.foc-topics::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(29, 63, 30);
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.foc-topics img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.foc-topics.content {
+    display: block;
+    width: 50%;
+    /* margin: 20px; 質問：なぜここではmarginが効かない？*/
+}
+
+.foc-topics .content h2 {
+    color: #000000;
+    margin: 20px 20px 10px;
+}
+
+.foc-topics .content p {
+    color: #777777;
+    font-size: 15px;
+    margin: 0 20px 0;
+}
+
+.foc-topics:hover {
+    background-color: transparent;
+    filter: brightness(0.8);
+}
+
+
+/* Trial */
+.trial {
+    background-image: url(/img/block-htmlcss-trial-test-0a3a0c1ba740353ddd0d22c9de96a0640b44b5e0141144bd471a854ba59778de.jpg);
+    padding: 0 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;   
+}
+
+.explanation h2 {
+    font-size: 26px;
+}
+
+.explanation span {
+    color: #ffff33;
+}
+
+.explanation span::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 34px;
+    line-height: 34px;
+    background-image: url(/img/trial-test-beginner-6290c71e454927cd5a83b25dec2792729108a6eff6935e568a3ece176ecc4030.png);
+    background-size: contain;    
+}
+
+.explanation p {
+    font-size: 15px;
+}
