@@ -450,3 +450,125 @@ campaigned-course:hover {
 .course.HTML {
     background-color: #8c7acb;
 }
+
+/* TechAcademyとは */
+#abstract {
+    width: 100%;
+    padding: 70px 0;
+    color: rgb(51,51,51);
+    text-align: center;
+}
+
+#abstract > h2 {
+    margin: 0 0 15px;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#abstract > p {
+    margin: 0 0 10.5px;
+    padding: 20px 0 35px;
+    font-size: 19px;
+    line-height: 34.2px;
+}
+
+.iframe-wrapper {
+    display: inline-block;
+    width: 695px;
+    height: 137px;
+    margin: 50px;
+    padding: 0;
+}
+
+.iframe-wrapper a {
+    display: flex;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 2px #777775;
+}
+
+.iframe-wrapper iframe {
+    width: 250px;
+    height: 141px;
+}
+
+.cm-text {
+    width: 445px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.cm-text-title h2 {
+    border-bottom: 2px solid rgb(92, 184, 92);
+    font-size: 19px;
+}
+
+.cm-text-detail p {
+    font-size: 15px;
+}
+
+/* 他スクールとの比較 */
+#comparison {
+    padding: 70px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#comparison h2 {
+    color: #333333;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+#comparison p {
+    color: #555555;
+    font-size: 15px;
+}
+
+#comparison table {
+    margin: 0 auto;
+}
+
+#comparison thead {
+    background-color: #aaaaaa;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+#comparison tbody {
+    color: #333333;
+    font-size: 15px;
+}
+
+#comparison tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#comparison span {
+    font-size: 13px;
+}
+
+
+#comparison img {
+    width: 203px; 
+}
+
+
+#comparison .TechAcademy-related.top {
+    /* border-right: 8px solid #5cb85c;
+    border-left: 8px solid #5cb85c; */
+    background-color: #5cb85c;
+}
+
+#comparison .TechAcademy-related {
+    border-right: 8px solid #5cb85c;
+    border-left: 8px solid #5cb85c;
+}
+
+#comparison .TechAcademy-related:last-of-type {
+    /* border-right: 8px solid #5cb85c;
+    border-left: 8px solid #5cb85c; */
+    border-bottom: 8px solid #5cb85c;
+    /* 質問：最後のcellにborder-bottomを付ける方法は？ */
+}
+
